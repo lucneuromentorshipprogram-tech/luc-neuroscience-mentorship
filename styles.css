@@ -57,3 +57,7 @@
   .profile,.profile:nth-child(5),.profile:nth-child(6),.profile:nth-child(7){grid-column:auto}
   .profile-email{word-break:break-word}
 }
+
+/* Social links shown together on the events page. */
+.social-links{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+@media(max-width:700px){.social-links{flex-direction:column;align-items:flex-start;gap:6px}}

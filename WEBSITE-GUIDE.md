@@ -45,3 +45,8 @@ Never put a Supabase `service_role` key in the website. Use the browser-safe pub
 
 ### Executive board emails
 Board member email addresses are listed in `board.html` directly below each member's favorite neurotransmitter. To update an address, change both the visible email and the `mailto:` link for that member.
+
+
+## Social links
+- LNM Instagram: https://www.instagram.com/lucneuromentorship/
+- NeuroSociety Instagram: https://www.instagram.com/neurosocietyluc/
