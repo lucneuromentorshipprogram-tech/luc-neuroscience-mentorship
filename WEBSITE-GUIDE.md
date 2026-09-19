@@ -41,3 +41,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSfnaRwgaPENH6YKGJUto24ax4iVQiDOvYFS5JkK
 The public forum is at `forum.html`. It is designed to save submissions to Supabase after the project is connected. The private dashboard is at `dashboard.html`.
 
 Never put a Supabase `service_role` key in the website. Use the browser-safe publishable/anon key with Row Level Security configured.
+
+
+### Executive board emails
+Board member email addresses are listed in `board.html` directly below each member's favorite neurotransmitter. To update an address, change both the visible email and the `mailto:` link for that member.

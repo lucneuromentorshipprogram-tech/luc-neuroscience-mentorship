@@ -37,3 +37,23 @@
   .signup-actions{margin-top:20px}
   .google-form-frame{height:1550px}
 }
+
+
+/* Executive board layout: four across on desktop, three centered on the second row. */
+.profiles{grid-template-columns:repeat(12,minmax(0,1fr));align-items:stretch}
+.profile{grid-column:span 3;display:flex;flex-direction:column}
+.profile .body{flex:1}
+.profile-email{margin-top:10px!important;padding-top:10px;border-top:1px solid var(--line)}
+.profile-email a{color:var(--m);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.profile:nth-child(5){grid-column:2 / span 3}
+.profile:nth-child(6){grid-column:5 / span 3}
+.profile:nth-child(7){grid-column:8 / span 3}
+@media(max-width:1100px){
+  .profiles{grid-template-columns:1fr 1fr}
+  .profile,.profile:nth-child(5),.profile:nth-child(6),.profile:nth-child(7){grid-column:auto}
+}
+@media(max-width:700px){
+  .profiles{grid-template-columns:1fr}
+  .profile,.profile:nth-child(5),.profile:nth-child(6),.profile:nth-child(7){grid-column:auto}
+  .profile-email{word-break:break-word}
+}
