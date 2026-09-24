@@ -7,24 +7,20 @@ Authorized e-board users can sign in to `dashboard.html` and review/export the s
 ## 1. Create the database
 Create a Supabase project at https://supabase.com/.
 
-Open **SQL Editor** and run `supabase-schema.sql` from this folder.
+For this website setup, the `forum_questions` table was created in Supabase Table Editor and RLS is enabled. The public INSERT policy named **Public can submit questions** is also configured for `anon`.
 
-The schema creates:
+The intended schema creates:
 - `forum_questions` — the quantitative + qualitative submissions
 - `club_admins` — the e-board user IDs allowed to read submissions
 
 Row Level Security (RLS) is enabled. The public can submit, while only authorized authenticated users can read.
 
-## 2. Add your Supabase project values
-Open `supabase-config.js` and replace:
-- `YOUR-PROJECT` with your Supabase project URL
-- `YOUR-PUBLISHABLE-KEY` with your project's publishable/anon key
+## 2. Connect the website
+`supabase-config.js` in this package is already filled with the club project URL and publishable key you provided.
 
-Do **not** put the `service_role` secret into this file.
+Do **not** replace it with a secret/service-role key. Supabase documents the publishable key as safe for browser use when Row Level Security is enabled and policies limit access.
 
-For a static website, the publishable/anon key is intended for browser use; the database policies are what protect the data.
-
-## 3. Create e-board dashboard accounts
+## 3. Set up e-board dashboard access
 In Supabase go to **Authentication → Users** and create the e-board accounts that should be allowed to review submissions.
 
 For each approved e-board account, copy its Auth UUID and run:
