@@ -35,7 +35,9 @@
     }catch(err){
       console.error('Question submission failed',err);
       status.className='status error'; status.style.display='block';
-      status.textContent='We could not save your question. Please try again or email the program directly.';
+      const code = err && err.code ? ` (code ${err.code})` : '';
+      const message = err && err.message ? err.message : 'Unknown database error';
+      status.textContent = `We could not save your question yet. Supabase says: ${message}${code}`;
     }finally{
       button.disabled=false; button.textContent='Submit question →';
     }
