@@ -1,33 +1,35 @@
-# LUC Neuroscience Mentorship Website Guide
+# Website Guide — LUC Neuroscience Mentorship Program
 
-## Important pages
-- `index.html` — homepage and featured community content
-- `board.html` — executive board names, roles, bios, and photos
-- `mission.html` — club mission and purpose
-- `resources.html` — student resources and useful links
-- `events.html` — LNM and NeuroSociety events and social links
+## Quick workflow
+1. Download or edit the website files.
+2. Upload changed files to the GitHub repository.
+3. Click **Commit changes**.
+4. Vercel deploys the new version when the repository is connected.
+
+## Pages
+- `index.html` — homepage
+- `board.html` — 2026–27 executive board
+- `mission.html` — club mission
+- `resources.html` — courses, undergraduate research, and resume/career resources
+- `events.html` — LNM + NeuroSociety events
 - `forum.html` — Ask a Question Google Form
-- `apply.html` — mentor/mentee signup Google Form
+- `apply.html` — mentor/mentee Google Form
 
-## Forms and data
-The website uses Google Forms for both Get Involved and Ask a Question.
+## Site-wide files
+- `styles.css` — all colors, layout, typography, mobile rules
+- `script.js` — mobile menu and small interactions
+- `lnmp-logo.png` — club logo
+- `board-*.jpg` — board portraits
+- `community-group-2026.jpg` — group photo
 
-### Ask a Question
-The question form is embedded in `forum.html`. Google Forms stores submitted responses in the form owner's Responses section. For analysis, the form owner can connect the responses to Google Sheets and use filters, pivot tables, charts, or exports for end-of-year summaries.
+## Google Forms
+The Ask a Question and Get Involved pages use embedded Google Forms. Form responses are stored by Google Forms and can be linked to Google Sheets by the form owner.
 
-### Get Involved
-The mentor/mentee signup form is embedded in `apply.html`.
+## Updating resources
+Open `resources.html` and add/edit a resource-card. Keep official Loyola links under the appropriate category:
+- Courses
+- Undergraduate Research
+- Resume & Career Development
 
-## Editing in GitHub
-1. Open the repository.
-2. Choose **Add file → Upload files** when replacing or adding files.
-3. Upload the updated file(s).
-4. Scroll to **Commit changes**.
-5. Commit the change.
-6. Vercel should automatically deploy the update if the GitHub repository is connected.
-
-## Common updates
-- New board member: edit `board.html` and add the matching photo file.
-- New event: edit `events.html`.
-- New resource: edit `resources.html`.
-- Change form: replace the Google Forms link/iframe in the appropriate page.
+## Updating events
+Open `events.html` and update the LNM or NeuroSociety event cards. Keep Instagram links under their respective event sections.

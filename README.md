@@ -1,23 +1,25 @@
 # LUC Neuroscience Mentorship Program Website
 
-Static website for the Loyola University Chicago Neuroscience Mentorship Program.
+Static HTML website for the LUC Neuroscience Mentorship Program at Loyola University Chicago.
 
-## Current setup
-- `apply.html` embeds the mentor/mentee Google Form.
-- `forum.html` embeds the Ask a Question Google Form.
-- Google Forms stores responses in the form owner's Responses section; the owner can connect responses to Google Sheets for analysis.
-- The site is hosted through Vercel and can be updated by committing file changes to the connected GitHub repository.
+## What is included
+- Home, Executive Board, Mission, Resources, Events, Ask a Question, and Get Involved pages.
+- Club logo (`lnmp-logo.png`) used in the header/footer and Resources page.
+- Google Form embedded for mentor/mentee sign-up.
+- Google Form embedded for the Ask a Question page.
+- E-board photos and LUC email links.
+- LNM and NeuroSociety event information and Instagram links.
+- Resources page organized into Courses, Undergraduate Research, and Resume & Career Development.
 
-## Main pages
-- `index.html` — Home
-- `board.html` — Executive Board
-- `mission.html` — Mission
-- `resources.html` — Resources
-- `events.html` — Events
-- `forum.html` — Ask a Question
-- `apply.html` — Get Involved
-- `styles.css` — Site styling
-- `script.js` — Mobile navigation behavior
+## Editing
+The main page files are HTML. Site-wide visual styling is in `styles.css`; mobile navigation is in `script.js`.
 
-## Updating the website
-For small text/link/image changes, edit the relevant file in GitHub and commit the change. Vercel should automatically redeploy when the connected repository changes.
+For small text/link changes, GitHub's browser editor can be used. For larger changes, replace the relevant files in the repository and commit them. If GitHub is connected to Vercel, a commit to the production branch triggers a new deployment.
+
+## Google Forms
+Responses for both forms are stored in Google Forms. The form owner can review the Responses tab and optionally connect a form to Google Sheets for analysis.
+
+## Images
+- `lnmp-logo.png` — club logo
+- `board-*.jpg` — executive board portraits
+- `community-group-2026.jpg` — group photo
