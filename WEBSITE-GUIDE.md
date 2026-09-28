@@ -33,3 +33,4 @@ Open `resources.html` and add/edit a resource-card. Keep official Loyola links u
 
 ## Updating events
 Open `events.html` and update the LNM or NeuroSociety event cards. Keep Instagram links under their respective event sections.
+- **mentee-mc-neuro-plan.numbers** — downloadable Molecular & Cellular Neuroscience course-planning file linked in the Resources → Courses section.
