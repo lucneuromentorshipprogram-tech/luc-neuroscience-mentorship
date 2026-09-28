@@ -1,52 +1,33 @@
 # LUC Neuroscience Mentorship Website Guide
 
-## Quick update workflow
+## Important pages
+- `index.html` — homepage and featured community content
+- `board.html` — executive board names, roles, bios, and photos
+- `mission.html` — club mission and purpose
+- `resources.html` — student resources and useful links
+- `events.html` — LNM and NeuroSociety events and social links
+- `forum.html` — Ask a Question Google Form
+- `apply.html` — mentor/mentee signup Google Form
 
-1. Make a change in GitHub or have the board request an updated file package.
-2. Commit the changed files to the GitHub repository.
-3. Vercel will automatically deploy the new commit when the repository is connected.
+## Forms and data
+The website uses Google Forms for both Get Involved and Ask a Question.
 
-## Common files
+### Ask a Question
+The question form is embedded in `forum.html`. Google Forms stores submitted responses in the form owner's Responses section. For analysis, the form owner can connect the responses to Google Sheets and use filters, pivot tables, charts, or exports for end-of-year summaries.
 
-- `index.html` — homepage
-- `board.html` — 2026–27 executive board
-- `mission.html` — mission and program information
-- `resources.html` — student resources
-- `events.html` — LNM + NeuroSociety events
-- `apply.html` — Google Form mentor/mentee signup
-- `forum.html` + `forum.js` — public question forum
-- `dashboard.html` + `dashboard.js` — private e-board question dashboard
-- `styles.css` — site-wide design and responsive layout
-- `script.js` — navigation/interactions
-- `supabase-config.js` — Supabase project connection values (never use a service-role secret here)
-- `supabase-schema.sql` — forum database setup
+### Get Involved
+The mentor/mentee signup form is embedded in `apply.html`.
 
-## Images
+## Editing in GitHub
+1. Open the repository.
+2. Choose **Add file → Upload files** when replacing or adding files.
+3. Upload the updated file(s).
+4. Scroll to **Commit changes**.
+5. Commit the change.
+6. Vercel should automatically deploy the update if the GitHub repository is connected.
 
-The new board/group photos are local files in the repository:
-- `board-mariam.jpg`
-- `board-emily.jpg`
-- `board-sam.jpg`
-- `board-jessica.jpg`
-- `board-juliana.jpg`
-- `community-group-2026.jpg`
-
-## Mentor/mentee signup
-
-The Get Involved page embeds the club Google Form:
-https://docs.google.com/forms/d/e/1FAIpQLSfnaRwgaPENH6YKGJUto24ax4iVQiDOvYFS5JkKKqjaYeIzmw/viewform
-
-## Question forum
-
-The public forum is at `forum.html`. It is designed to save submissions to Supabase after the project is connected. The private dashboard is at `dashboard.html`.
-
-Never put a Supabase `service_role` key in the website. Use the browser-safe publishable/anon key with Row Level Security configured.
-
-
-### Executive board emails
-Board member email addresses are listed in `board.html` directly below each member's favorite neurotransmitter. To update an address, change both the visible email and the `mailto:` link for that member.
-
-
-## Social links
-- LNM Instagram: https://www.instagram.com/lucneuromentorship/
-- NeuroSociety Instagram: https://www.instagram.com/neurosocietyluc/
+## Common updates
+- New board member: edit `board.html` and add the matching photo file.
+- New event: edit `events.html`.
+- New resource: edit `resources.html`.
+- Change form: replace the Google Forms link/iframe in the appropriate page.
