@@ -45,6 +45,10 @@ Open `events.html` and update the LNM or NeuroSociety event cards. Keep Instagra
 
 
 ## October 2026 photo updates
-- `events.html` places the Mentor-Mentee Social photo under the “LNM × NeuroSociety” community section, not below “Our upcoming program events.”
+- `events.html` keeps the LNM upcoming events and the separate NeuroSociety event list. The former standalone “LNM × NeuroSociety” community feature/photo section has been removed.
 - On `index.html`, the three homepage team-preview cards use event recap photos (`event-1-mentor-mentee-social-01.jpg`, `-02.jpg`, and `-04.jpg`). The full individual board portraits on `board.html` have not been changed.
 - `lnmp-logo.png` is the cropped/aligned circular club logo used throughout the site.
+
+
+## Homepage photo preview
+The homepage displays three event photos beneath “Mentors who remember being new.” and the subtitle. It intentionally omits individual board member names and profiles there; visit `board.html` for full executive-board profiles.

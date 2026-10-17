@@ -33,5 +33,5 @@ The Google Slides embed requires the presentation to be shared with the intended
 
 ## October 2026 photo and logo updates
 - The cropped, aligned club logo is stored in `lnmp-logo.png` and is used in the header/footer and favicon.
-- The Events page no longer shows the Mentor-Mentee Social photo under “Our upcoming program events.” The same photo now appears under “LNM × NeuroSociety.”
-- The homepage's three team-preview cards now display photos from the Mentor-Mentee Social recap. Full individual portraits on `board.html` remain unchanged.
+- The Events page has no standalone “LNM × NeuroSociety” community feature section; the separate NeuroSociety upcoming-events list and Instagram link remain.
+- The homepage's three event-photo preview cards display Mentor-Mentee Social photos without executive-board names; the full individual portraits and profile details remain on `board.html`.
