@@ -3,11 +3,12 @@
 Static HTML website for the LUC Neuroscience Mentorship Program at Loyola University Chicago.
 
 ## What is included
-- Home, Executive Board, Mission, Resources, Events, Ask a Question, and Get Involved pages.
+- Home, Executive Board, Mission, Resources, Events, Event Recaps, Ask a Question, and Get Involved pages.
 - Club logo (`lnmp-logo.png`) used in the header/footer and Resources page.
 - Google Form embedded for mentor/mentee sign-up.
 - Google Form embedded for the Ask a Question page.
 - E-board photos and LUC email links.
+- Event Recaps page with five event photos and an embedded Google Slides presentation.
 - LNM and NeuroSociety event information and Instagram links.
 - Resources page organized into Courses, Undergraduate Research, and Resume & Career Development.
 
@@ -23,3 +24,8 @@ Responses for both forms are stored in Google Forms. The form owner can review t
 - `lnmp-logo.png` — club logo
 - `board-*.jpg` — executive board portraits
 - `community-group-2026.jpg` — group photo
+
+## Event recap updates
+The `event-recaps.html` page contains the first Mentor-Mentee Social recap. Its photos are `event-1-mentor-mentee-social-01.jpg` through `event-1-mentor-mentee-social-05.jpg`. Keep the photos in the order shown. Before publishing any event recap, share a preview with the club president and wait for approval.
+
+The Google Slides embed requires the presentation to be shared with the intended viewers. If it prompts visitors to request access, update the presentation sharing settings in Google Slides.

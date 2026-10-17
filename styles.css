@@ -408,3 +408,39 @@ body{
   }
   .resource-jump a{white-space:nowrap}
 }
+
+
+/* Event Recaps page */
+.recap-title{padding-top:clamp(52px,7vw,86px);padding-bottom:34px;background:radial-gradient(circle at 90% 18%,rgba(227,163,26,.22),transparent 28%),linear-gradient(135deg,#fff8f0,#fffdf9)}
+.recap-title h1{max-width:1050px;font-size:clamp(38px,5.3vw,68px);line-height:1.06;letter-spacing:-.025em}
+.recap-gallery-section{padding:38px 7% 58px;background:#fffaf5}
+.recap-gallery{max-width:1260px;margin:0 auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;align-items:stretch}
+.recap-photo{margin:0;grid-column:span 2;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:7px;box-shadow:0 12px 28px rgba(82,0,18,.09)}
+.recap-photo img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;transition:transform .35s ease}
+.recap-photo:hover img{transform:scale(1.025)}
+.recap-photo:nth-child(4){grid-column:2 / span 2}
+.recap-photo:nth-child(5){grid-column:4 / span 2}
+.recap-summary-section{padding:58px 7%;background:linear-gradient(180deg,#fff3e8,#fffaf5)}
+.recap-summary-card{max-width:1000px;margin:0 auto;padding:clamp(25px,5vw,48px);background:#fff;border:1px solid var(--line);border-top:5px solid var(--g);box-shadow:0 18px 42px rgba(82,0,18,.07)}
+.recap-summary-card h2,.recap-slideshow-copy h2{font-family:"Playfair Display",Georgia,serif;color:var(--m);font-size:clamp(30px,4vw,46px);line-height:1.08;margin:0 0 18px}
+.recap-summary-card p:not(.eyebrow){font-size:clamp(16px,1.6vw,18px);line-height:1.85;color:var(--muted);margin-bottom:0}
+.recap-slideshow-section{background:#fff}
+.recap-slideshow-copy{max-width:900px;margin:0 auto 28px}
+.recap-slideshow-copy p:not(.eyebrow){color:var(--muted);font-size:16px}
+.recap-slideshow-frame{max-width:1200px;margin:0 auto;aspect-ratio:16/9;min-height:320px;overflow:hidden;background:#1f1117;border:1px solid var(--line);box-shadow:0 18px 42px rgba(82,0,18,.12)}
+.recap-slideshow-frame iframe{display:block;width:100%;height:100%;min-height:320px;border:0}
+.recap-slideshow-fallback{max-width:1200px;margin:15px auto 0;color:var(--muted);font-size:12px}
+.recap-slideshow-fallback a{color:var(--m);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.recap-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.recap-photo,.recap-photo:nth-child(4){grid-column:auto}.recap-photo:nth-child(5){grid-column:1/-1;width:calc(50% - 7px);justify-self:center}}
+@media(max-width:700px){.recap-title{padding:48px 6% 28px}.recap-gallery-section{padding:24px 5% 38px}.recap-gallery{grid-template-columns:1fr;gap:14px}.recap-photo,.recap-photo:nth-child(4),.recap-photo:nth-child(5){grid-column:1;width:100%;max-width:520px;justify-self:center}.recap-photo img{aspect-ratio:3/4}.recap-summary-section{padding:35px 5%}.recap-summary-card{padding:24px}.recap-slideshow-frame{aspect-ratio:4/3;min-height:320px}.recap-slideshow-frame iframe{min-height:320px}}
+@media(min-width:701px) and (max-width:1200px){.site-header{padding:0 2.5%;gap:16px}.nav{gap:11px;font-size:10px}.brand-logo{width:49px;height:49px;flex-basis:49px}.wordmark .prog{font-size:13px}}
+/* Keep the expanded eight-item navigation usable on small tablets. */
+@media(min-width:701px) and (max-width:850px){
+  .site-header{height:68px;padding:0 5%;gap:16px}
+  .wordmark .prog{display:none}
+  .menu{display:block}
+  .nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fffdf9;padding:10px 7%;flex-direction:column;box-shadow:0 12px 20px rgba(0,0,0,.08);gap:0}
+  .nav.open{display:flex}
+  .nav a{padding:11px 0;border:0}
+  .header-cta{display:none}
+}

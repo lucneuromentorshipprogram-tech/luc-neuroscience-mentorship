@@ -12,6 +12,7 @@
 - `mission.html` — club mission
 - `resources.html` — courses, undergraduate research, and resume/career resources
 - `events.html` — LNM + NeuroSociety events
+- `event-recaps.html` — event recap stories, photos, and slideshow embeds
 - `forum.html` — Ask a Question Google Form
 - `apply.html` — mentor/mentee Google Form
 
@@ -34,3 +35,10 @@ Open `resources.html` and add/edit a resource-card. Keep official Loyola links u
 ## Updating events
 Open `events.html` and update the LNM or NeuroSociety event cards. Keep Instagram links under their respective event sections.
 - **mentee-mc-neuro-plan.numbers** — downloadable Molecular & Cellular Neuroscience course-planning file linked in the Resources → Courses section.
+
+## Event recaps workflow
+1. Create a separate recap page or add a new recap entry; do not overwrite older recaps.
+2. Add the new recap link to the Event Recaps index/navigation as needed.
+3. Compress and include event photos; write useful alt text.
+4. Embed the slideshow using its Google Slides `/embed` URL. Ensure viewing permissions allow the intended audience.
+5. Share a GitHub/Vercel preview with the president and wait for approval before merging to the production branch.
