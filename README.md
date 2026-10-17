@@ -29,3 +29,9 @@ Responses for both forms are stored in Google Forms. The form owner can review t
 The `event-recaps.html` page contains the first Mentor-Mentee Social recap. Its photos are `event-1-mentor-mentee-social-01.jpg` through `event-1-mentor-mentee-social-05.jpg`. Keep the photos in the order shown. Before publishing any event recap, share a preview with the club president and wait for approval.
 
 The Google Slides embed requires the presentation to be shared with the intended viewers. If it prompts visitors to request access, update the presentation sharing settings in Google Slides.
+
+
+## October 2026 photo and logo updates
+- The cropped, aligned club logo is stored in `lnmp-logo.png` and is used in the header/footer and favicon.
+- The Events page no longer shows the Mentor-Mentee Social photo under “Our upcoming program events.” The same photo now appears under “LNM × NeuroSociety.”
+- The homepage's three team-preview cards now display photos from the Mentor-Mentee Social recap. Full individual portraits on `board.html` remain unchanged.

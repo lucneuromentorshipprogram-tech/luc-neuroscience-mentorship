@@ -42,3 +42,9 @@ Open `events.html` and update the LNM or NeuroSociety event cards. Keep Instagra
 3. Compress and include event photos; write useful alt text.
 4. Embed the slideshow using its Google Slides `/embed` URL. Ensure viewing permissions allow the intended audience.
 5. Share a GitHub/Vercel preview with the president and wait for approval before merging to the production branch.
+
+
+## October 2026 photo updates
+- `events.html` places the Mentor-Mentee Social photo under the “LNM × NeuroSociety” community section, not below “Our upcoming program events.”
+- On `index.html`, the three homepage team-preview cards use event recap photos (`event-1-mentor-mentee-social-01.jpg`, `-02.jpg`, and `-04.jpg`). The full individual board portraits on `board.html` have not been changed.
+- `lnmp-logo.png` is the cropped/aligned circular club logo used throughout the site.
