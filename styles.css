@@ -444,3 +444,10 @@ body{
   .nav a{padding:11px 0;border:0}
   .header-cta{display:none}
 }
+
+/* Featured photo directly below the upcoming-events heading. */
+.event-intro-photo{margin:0 0 22px;max-width:560px;border:1px solid var(--line);background:#fff;box-shadow:0 16px 38px rgba(45,18,30,.12);overflow:hidden}
+.event-intro-photo img{width:100%;height:auto;display:block}
+.event-intro-photo figcaption{padding:11px 15px;background:#fffaf5;color:var(--m);font-size:11px;font-weight:700;letter-spacing:.04em}
+.event-section-intro{margin:0 0 26px;color:var(--muted);font-size:14px}
+@media(max-width:700px){.event-intro-photo{max-width:100%}.event-intro-photo img{height:auto}}
