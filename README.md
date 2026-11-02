@@ -31,7 +31,5 @@ The `event-recaps.html` page contains the first Mentor-Mentee Social recap. Its 
 The Google Slides embed requires the presentation to be shared with the intended viewers. If it prompts visitors to request access, update the presentation sharing settings in Google Slides.
 
 
-## October 2026 photo and logo updates
-- The cropped, aligned club logo is stored in `lnmp-logo.png` and is used in the header/footer and favicon.
-- The Events page has no standalone “LNM × NeuroSociety” community feature section; the separate NeuroSociety upcoming-events list and Instagram link remain.
-- The homepage's three event-photo preview cards display Mentor-Mentee Social photos without executive-board names; the full individual portraits and profile details remain on `board.html`.
+## Event archive update
+This version adds a Past Event Archives destination (`event-archive.html`) and a link to it from the main Event Recaps page. The archive intentionally contains no event entries yet. Do not place any events in a Fall 2026 archive until Dev explicitly requests that after the semester ends (around December 14, 2026).

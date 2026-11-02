@@ -12,7 +12,8 @@
 - `mission.html` — club mission
 - `resources.html` — courses, undergraduate research, and resume/career resources
 - `events.html` — LNM + NeuroSociety events
-- `event-recaps.html` — event recap stories, photos, and slideshow embeds
+- `event-recaps.html` — current/featured event recap stories, photos, and slideshow embeds
+- `event-archive.html` — separate destination for older event recaps; currently an empty archive landing page
 - `forum.html` — Ask a Question Google Form
 - `apply.html` — mentor/mentee Google Form
 
@@ -44,11 +45,8 @@ Open `events.html` and update the LNM or NeuroSociety event cards. Keep Instagra
 5. Share a GitHub/Vercel preview with the president and wait for approval before merging to the production branch.
 
 
-## October 2026 photo updates
-- `events.html` keeps the LNM upcoming events and the separate NeuroSociety event list. The former standalone “LNM × NeuroSociety” community feature/photo section has been removed.
-- On `index.html`, the three homepage team-preview cards use event recap photos (`event-1-mentor-mentee-social-01.jpg`, `-02.jpg`, and `-04.jpg`). The full individual board portraits on `board.html` have not been changed.
-- `lnmp-logo.png` is the cropped/aligned circular club logo used throughout the site.
-
-
-## Homepage photo preview
-The homepage displays three event photos beneath “Mentors who remember being new.” and the subtitle. It intentionally omits individual board member names and profiles there; visit `board.html` for full executive-board profiles.
+## Event archive workflow
+- The main `event-recaps.html` page contains current/featured recaps and links to `event-archive.html`.
+- `event-archive.html` is intentionally empty for now; it explains that older recaps will be organized there by academic year and semester.
+- **Do not add a Fall 2026 archive or move any events into it until Dev explicitly gives approval after the semester ends (around December 14, 2026).**
+- When approved, create archive subheadings by academic year and semester, then link each preserved recap page from the archive. Do not delete the original recap pages or overwrite their content.
