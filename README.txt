@@ -1,13 +1,11 @@
-LUC Neuroscience Mentorship — Event Recaps Update
+EVENT RECAP PAGE UPDATE
 
-Upload ALL files in this ZIP into the ROOT of the existing GitHub website repository, replacing event-recaps.html and styles.css. Keep the supplied media filenames unchanged so the webpage can find them.
+Replace only event-recaps.html in your website's GitHub repository.
+Keep the existing styles.css, event photos, and ALS Walk video files unchanged.
 
-What changed:
-- Event Recap One retains the five original mentor-mentee social photos and adds event-1-group-portrait.jpg as a sixth photo. A CSS crop focuses on faces.
-- Event Recap Two has three ALS Walk photos, a playable locally hosted compressed MP4 video and your supplied paragraph.
-- Existing mentor-mentee recap, slideshow, and site navigation remain.
-- The video was optimized for the web (720p, approximately 3 MB).
-
-Note: if other website pages refer to styles.css, replacing it preserves the styles from the prior Event Recaps update and adds only recap-specific rules.
-
-After committing to GitHub, Vercel should deploy automatically. Verify images, video playback and mobile layout on the live website.
+Changes:
+- Event Recap One now shows only the first three photos (one row).
+- Updated Event Recap One with the exact supplied paragraph.
+- Removed the 'More Moments from Event One' section entirely.
+- Event Recap Two remains a separate section with its three ALS Walk photos, video, and paragraph.
+- Navigation, slideshow, and event archive links remain unchanged.
