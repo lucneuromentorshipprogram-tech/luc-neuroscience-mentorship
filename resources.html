@@ -8,7 +8,15 @@
 <title>Resources | LUC Neuroscience Mentorship</title>
 <link href="styles.css" rel="stylesheet"/>
 <link href="lnmp-logo.png" rel="icon" type="image/png"/>
-</head>
+<style>
+/* LNMP academic resources: two equal columns on desktop, one on mobile */
+.academic-major-grid {display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:24px !important;align-items:stretch;}
+.academic-major-grid .academic-track {display:flex !important;flex-direction:column !important;gap:16px !important;min-width:0;}
+.academic-major-grid .academic-track .resource-card {display:flex !important;flex-direction:column !important;flex:1 1 0;min-height:190px !important;width:100%;box-sizing:border-box;}
+.academic-major-grid .academic-track .resource-arrow {margin-top:auto;}
+.academic-track-heading {color:#800020;font-family:Georgia,serif;font-size:clamp(20px,2.2vw,29px);line-height:1.2;margin:0 0 3px;}
+@media(max-width:760px){.academic-major-grid {grid-template-columns:1fr !important;gap:32px !important;} .academic-major-grid .academic-track .resource-card{min-height:175px !important;}}
+</style></head>
 <body>
 <header class="site-header">
 <a aria-label="LUC Neuroscience Mentorship Program home" class="wordmark" href="index.html">
@@ -51,27 +59,33 @@
 </div>
 </div>
 <div aria-label="Neuroscience major resources" class="academic-major-grid">
-<div class="academic-track">
+<div class="academic-track"><h3 class="academic-track-heading">Molecular &amp; Cellular Neuroscience Resources</h3>
 <a class="resource-card accent-red" href="https://catalog.luc.edu/undergraduate/arts-sciences/neuroscience/molecular-cellular-neuroscience-bs/#curriculumtext" rel="noopener" target="_blank">
 <span class="resource-kicker">NEUROSCIENCE MAJOR</span><h3>Molecular &amp; Cellular Neuroscience (BS)</h3>
 <p>Official curriculum and degree requirements for the molecular/cellular neuroscience track.</p><span class="resource-arrow">Open Loyola catalog ↗</span>
 </a>
-<a class="resource-card accent-red" href="LNMP MC Academic Plan.xlsx" download="LNMP MC Academic Plan.xlsx">
+<a class="resource-card accent-red" download="LNMP MC Academic Plan.numbers" href="LNMP MC Academic Plan.numbers">
+<span class="resource-kicker">ACADEMIC PLAN · DOWNLOAD</span><h3>Molecular and Cellular Neuroscience Major Academic Plan</h3>
+<p>Download the Molecular and Cellular Neuroscience academic planning spreadsheet for Apple Numbers.</p><span class="resource-arrow">Download MC academic plan ↓</span>
+</a>
+<a class="resource-card accent-red" download="LNMP MC Academic Plan.xlsx" href="LNMP MC Academic Plan.xlsx">
 <span class="resource-kicker">ACADEMIC PLAN · MICROSOFT EXCEL</span><h3>MC Neuroscience Academic Plan — Excel File</h3>
 <p>Download your own copy of the Molecular and Cellular Neuroscience academic plan to open and edit in Microsoft Excel. No SharePoint access required.</p><span class="resource-arrow">Download Excel academic plan ↓</span>
 </a>
-
 </div>
-<div class="academic-track">
+<div class="academic-track"><h3 class="academic-track-heading">Cognitive &amp; Behavioral Neuroscience Resources</h3>
 <a class="resource-card accent-gold" href="https://catalog.luc.edu/undergraduate/arts-sciences/neuroscience/cognitive-behavioral-neuroscience-bs/#curriculumtext" rel="noopener" target="_blank">
 <span class="resource-kicker">NEUROSCIENCE MAJOR</span><h3>Cognitive &amp; Behavioral Neuroscience (BS)</h3>
 <p>Official curriculum and degree requirements for the cognitive/behavioral neuroscience track.</p><span class="resource-arrow">Open Loyola catalog ↗</span>
 </a>
-<a class="resource-card accent-gold" href="LNMP CB ACADEMIC PLAN.xlsx" download="LNMP CB ACADEMIC PLAN.xlsx">
+<a class="resource-card accent-gold" download="LNMP CB ACADEMIC PLAN.numbers" href="LNMP CB ACADEMIC PLAN.numbers">
+<span class="resource-kicker">ACADEMIC PLAN · DOWNLOAD</span><h3>Cognitive and Behavioral Neuroscience Major Academic Plan</h3>
+<p>Download the Cognitive and Behavioral Neuroscience academic planning spreadsheet for Apple Numbers.</p><span class="resource-arrow">Download CB academic plan ↓</span>
+</a>
+<a class="resource-card accent-gold" download="LNMP CB ACADEMIC PLAN.xlsx" href="LNMP CB ACADEMIC PLAN.xlsx">
 <span class="resource-kicker">ACADEMIC PLAN · MICROSOFT EXCEL</span><h3>CB Neuroscience Academic Plan — Excel File</h3>
 <p>Download your own copy of the Cognitive and Behavioral Neuroscience academic plan to open and edit in Microsoft Excel. No SharePoint access required.</p><span class="resource-arrow">Download Excel academic plan ↓</span>
 </a>
-
 </div>
 </div>
 <div class="academic-other-heading">
