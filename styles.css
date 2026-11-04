@@ -467,18 +467,19 @@ body{
 .archive-back-link{margin-top:16px}
 @media(max-width:760px){.archive-promo-card{align-items:flex-start;flex-direction:column}.archive-promo-link{white-space:normal}.archive-promo-section{padding:32px 5% 52px}.archive-empty-section{padding:42px 5% 65px}.archive-page-hero{padding:48px 6% 35px}}
 
-/* Courses & academic planning: two neuroscience tracks and separate additional resources */
-.academic-major-grid,.academic-other-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.academic-major-grid .resource-card{min-height:245px}
-.academic-other-heading{margin:52px 0 22px}
-.academic-other-heading .eyebrow{margin-bottom:9px}
-.academic-other-heading h3{font-family:"Playfair Display",Georgia,serif;color:var(--m);font-size:clamp(28px,3vw,38px);line-height:1.15;margin:0 0 10px}
-.academic-other-heading p:not(.eyebrow){color:var(--muted);margin:0;max-width:680px}
-.academic-other-grid .resource-card{min-height:230px}
-@media(max-width:700px){.academic-major-grid,.academic-other-grid{grid-template-columns:1fr}.academic-other-heading{margin-top:38px}}
 
-/* Major-specific academic plan download cards, grouped under each major. */
-.academic-track{display:flex;flex-direction:column;gap:18px;min-width:0}
-.academic-track .resource-card{min-height:0;flex:1}
-.academic-track .resource-card[href$=".numbers"]{background:#fffaf2;border-style:solid}
-@media(max-width:700px){.academic-track{gap:14px}}
+/* Event Recap: photo-card layout matching the approved preview. */
+.recap-preview-title{background:#fffdf9;border-bottom:0;text-align:center;padding:55px 6% 32px}
+.recap-preview-title h1{margin:0 auto;color:var(--m);font-size:clamp(40px,5vw,58px)}
+.recap-preview-title p:not(.eyebrow){max-width:790px;margin:15px auto 0;color:#383238;font-size:clamp(15px,1.6vw,19px)}
+.recap-preview-sections{background:#fffdf9;padding:12px 3.5% 70px;display:grid;gap:35px}
+.recap-preview-card{border:2px solid var(--m);border-radius:15px;padding:22px 24px 24px;background:#fff;box-shadow:0 4px 14px rgba(90,7,34,.04)}
+.recap-preview-card h2{font-family:"Playfair Display",Georgia,serif;color:var(--m);font-size:clamp(28px,3vw,41px);line-height:1.15;margin:0 0 4px}
+.recap-preview-description{font-size:clamp(14px,1.5vw,18px);color:#29272a;margin:0 0 24px;line-height:1.5}
+.recap-preview-grid{display:grid;gap:24px;align-items:center;grid-template-columns:repeat(3,minmax(0,1fr))}
+.recap-preview-grid figure{margin:0;border-radius:10px;overflow:hidden;min-width:0}
+.recap-preview-grid img{width:100%;height:250px;object-fit:cover;object-position:center;display:block}
+.recap-preview-grid-small{width:min(85%,1050px);margin:0 auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}
+.recap-preview-grid-small img{height:185px}
+@media(max-width:800px){.recap-preview-sections{padding:8px 4% 50px;gap:24px}.recap-preview-card{padding:18px}.recap-preview-grid{gap:12px}.recap-preview-grid img{height:175px}.recap-preview-grid-small{width:95%;gap:16px}.recap-preview-grid-small img{height:145px}}
+@media(max-width:560px){.recap-preview-title{padding:38px 6% 24px}.recap-preview-card{padding:15px}.recap-preview-grid{grid-template-columns:1fr;gap:15px}.recap-preview-grid img{height:auto;aspect-ratio:16/10;object-fit:cover}.recap-preview-grid-small{width:100%;grid-template-columns:1fr}.recap-preview-grid-small img{height:auto;aspect-ratio:16/10}}
