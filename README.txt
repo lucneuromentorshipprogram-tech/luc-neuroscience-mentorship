@@ -1,1 +1,10 @@
-Upload index.html and mentor-mentee-social-home.jpg to the root of your GitHub website repository. Replace the existing index.html. Keep styles.css and other files unchanged. This changes only the photo in the Our Mission split section; it does not change the top hero background or other website content.
+LNMP HOMEPAGE PHOTO UPDATE
+
+Upload index.html and als-walk-homepage.jpg to the ROOT of your GitHub website repository.
+Replace the existing index.html, then commit. Vercel should redeploy automatically.
+
+This replaces the image in the 'Growing together at Loyola' community section
+with the supplied ALS Walk photo and updates the caption.
+The earlier Mentor-Mentee Social image beside the mission text is preserved.
+No CSS changes are needed.
+Keep mentor-mentee-social-home.jpg in your repository for the mission section.
