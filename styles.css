@@ -476,3 +476,9 @@ body{
 .academic-other-heading p:not(.eyebrow){color:var(--muted);margin:0;max-width:680px}
 .academic-other-grid .resource-card{min-height:230px}
 @media(max-width:700px){.academic-major-grid,.academic-other-grid{grid-template-columns:1fr}.academic-other-heading{margin-top:38px}}
+
+/* Major-specific academic plan download cards, grouped under each major. */
+.academic-track{display:flex;flex-direction:column;gap:18px;min-width:0}
+.academic-track .resource-card{min-height:0;flex:1}
+.academic-track .resource-card[href$=".numbers"]{background:#fffaf2;border-style:solid}
+@media(max-width:700px){.academic-track{gap:14px}}
