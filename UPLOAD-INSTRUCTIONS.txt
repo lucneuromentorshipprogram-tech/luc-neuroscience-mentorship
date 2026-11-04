@@ -1,0 +1,1 @@
+Upload resources.html and all four academic plan files to the same root folder in your website GitHub repository. Replace resources.html. Existing styles.css and other pages do not need to change. The Excel buttons download individual .xlsx copies; students can open them with Microsoft Excel without access to your SharePoint master files.
