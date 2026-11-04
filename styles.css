@@ -94,11 +94,10 @@ body{
   width:58px;
   height:58px;
   object-fit:contain;
-  background:#fff;
-  border:1px solid rgba(90,0,53,.16);
-  border-radius:50%;
+  background:#7b001b;
+  border-radius:12px;
   flex:0 0 58px;
-  box-shadow:0 6px 16px rgba(123,0,27,.10);
+  box-shadow:0 8px 22px rgba(123,0,27,.16);
 }
 .wordmark .prog{
   color:var(--m);
@@ -207,10 +206,8 @@ body{
   width:190px;
   height:190px;
   object-fit:contain;
-  background:#fff;
-  border:1px solid rgba(255,255,255,.62);
-  border-radius:50%;
-  box-shadow:0 8px 24px rgba(20,0,10,.18);
+  background:#7b001b;
+  border-radius:20px;
 }
 .category-head{
   display:flex;
@@ -346,7 +343,7 @@ body{
 }
 @media(max-width:700px){
   .site-header{height:72px;padding:0 4%}
-  .brand-logo{width:48px;height:48px;flex-basis:48px;border-radius:50%}
+  .brand-logo{width:48px;height:48px;flex-basis:48px;border-radius:10px}
   .wordmark .prog{font-size:14px;display:block}
   .menu{display:block}
   .nav{top:72px}
@@ -448,70 +445,13 @@ body{
   .header-cta{display:none}
 }
 
-/* Featured photo directly below the upcoming-events heading. */
-.event-intro-photo{margin:0 0 22px;max-width:560px;border:1px solid var(--line);background:#fff;box-shadow:0 16px 38px rgba(45,18,30,.12);overflow:hidden}
-.event-intro-photo img{width:100%;height:auto;display:block}
-.event-intro-photo figcaption{padding:11px 15px;background:#fffaf5;color:var(--m);font-size:11px;font-weight:700;letter-spacing:.04em}
-.event-section-intro{margin:0 0 26px;color:var(--muted);font-size:14px}
-@media(max-width:700px){.event-intro-photo{max-width:100%}.event-intro-photo img{height:auto}}
 
-/* October 2026 updates: relocated social photo and homepage event-photo previews */
-.community-replaced-photo {
-  width: min(560px, 100%);
-  max-width: 560px !important;
-  margin: 0;
-}
-.community-replaced-photo img {
-  width: 100%;
-  height: auto !important;
-  object-fit: contain;
-}
-.cards .card > img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: center 48%;
-}
-@media (max-width: 700px) {
-  .cards .card > img { height: 260px; }
-  .community-replaced-photo { max-width: 560px !important; }
-}
-
-
-/* Homepage team preview: event photography only, without individual names. */
-.homepage-event-gallery { align-items: stretch; }
-.home-photo-card { margin: 0; display: block; background: #fff; border: 1px solid var(--line); box-shadow: 0 14px 32px rgba(82,0,18,.08); }
-.home-photo-card img { width: 100%; height: 300px; object-fit: cover; object-position: center 48%; }
-@media (max-width: 700px) { .home-photo-card img { height: auto; aspect-ratio: 4 / 3; } }
-
-
-/* Event 02 — ALS Walk for Life recap */
-.als-recap-title{padding-top:clamp(48px,6vw,78px);padding-bottom:30px;background:radial-gradient(circle at 88% 12%,rgba(227,163,26,.18),transparent 26%),linear-gradient(135deg,#fff7ee,#fffdf9)}
-.als-recap-title h1{max-width:1100px;font-size:clamp(38px,5.1vw,66px);line-height:1.08}
-.als-location{margin:16px 0 0;color:var(--muted);font-size:14px!important;font-weight:600;letter-spacing:.04em}
-.als-recap-gallery-section{padding:32px 7% 52px;background:#fffaf5}
-.als-recap-gallery{max-width:1260px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
-.als-recap-photo{margin:0;overflow:hidden;background:#f5eee7;border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 28px rgba(82,0,18,.08)}
-.als-recap-photo img{display:block;width:100%;height:350px;object-fit:contain;background:#f4ece4}
-.als-recap-photo figcaption{padding:12px 14px;color:var(--muted);font-size:11px;font-weight:600;line-height:1.5;background:#fff}
-.als-summary-section{padding-top:48px;padding-bottom:48px}
-.als-media-section{background:#fffaf5;padding-top:62px;padding-bottom:74px}
-.als-media-grid{max-width:1260px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start}
-.als-media-card{padding:20px;background:#fff;border:1px solid var(--line);border-radius:9px;box-shadow:0 14px 34px rgba(82,0,18,.08);min-width:0}
-.als-media-heading{min-height:78px;margin-bottom:14px}
-.als-media-heading .eyebrow{margin-bottom:6px}
-.als-media-heading h3{font-family:'Playfair Display',Georgia,serif;color:var(--m);font-size:24px;line-height:1.15;margin:0}
-.als-video-frame{position:relative;aspect-ratio:16/9;overflow:hidden;background:#1b1115;border-radius:5px}
-.als-video-frame video,.als-video-frame iframe{display:block;width:100%;height:100%;border:0;object-fit:contain;background:#1b1115}
-.als-media-note{margin:12px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
-.recap-previous-divider{padding:48px 7% 12px;background:var(--p);text-align:center;border-top:1px solid var(--line)}
-.recap-previous-divider .eyebrow{margin-bottom:6px}
-.recap-previous-divider span{color:var(--muted);font-size:13px}
+/* Past Event Archives: linked from the main Event Recaps page. */
 .archive-promo-section{padding:48px 7% 76px;background:linear-gradient(180deg,#fffaf5 0%,#fff3e9 100%)}
 .archive-promo-card{max-width:1200px;margin:0 auto;padding:clamp(26px,4vw,46px);display:flex;align-items:center;justify-content:space-between;gap:32px;color:#fff;background:radial-gradient(circle at 90% 10%,rgba(227,163,26,.24),transparent 28%),linear-gradient(135deg,#7b001b 0%,#520012 58%,#9b0000 100%);border:1px solid rgba(123,0,27,.15);border-radius:16px;box-shadow:0 18px 42px rgba(82,0,18,.14)}
 .archive-promo-copy{max-width:690px}
 .archive-kicker{margin:0 0 10px;color:#ffd76b;font-size:9px;font-weight:800;letter-spacing:.2em}
-.archive-promo-copy h2{margin:0 0 10px;color:#fff7ee;font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,3.5vw,42px);line-height:1.08}
+.archive-promo-copy h2{margin:0 0 10px;color:#fff7ee;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,3.5vw,42px);line-height:1.08}
 .archive-promo-copy p:last-child{margin:0;color:#f8e9e8;font-size:14px}
 .archive-promo-link{display:inline-flex;align-items:center;gap:12px;padding:14px 18px;border-radius:6px;background:#fff7ee;color:#71001e;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:0 8px 22px rgba(25,0,10,.16);transition:transform .2s ease,box-shadow .2s ease}
 .archive-promo-link:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(25,0,10,.22)}
@@ -521,9 +461,18 @@ body{
 .archive-empty-section{padding:70px 7% 100px;background:linear-gradient(180deg,#fffaf5 0%,#fff3e9 100%)}
 .archive-empty-card{max-width:850px;margin:0 auto;padding:clamp(30px,5vw,58px);text-align:center;background:#fff;border:1px solid var(--line);border-top:5px solid var(--g);border-radius:12px;box-shadow:0 18px 42px rgba(82,0,18,.07)}
 .archive-empty-icon{width:64px;height:64px;display:grid;place-items:center;margin:0 auto 20px;border-radius:50%;background:#fff0e7;color:var(--m);font-size:31px}
-.archive-empty-card h2{margin:0 0 14px;color:var(--m);font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,4vw,44px);line-height:1.08}
+.archive-empty-card h2{margin:0 0 14px;color:var(--m);font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,4vw,44px);line-height:1.08}
 .archive-empty-card>p:not(.eyebrow){max-width:650px;margin:0 auto 15px;color:var(--muted);font-size:15px}
 .archive-empty-card .archive-small-note{font-size:12px!important;color:#77717a!important}
 .archive-back-link{margin-top:16px}
-@media(max-width:900px){.als-recap-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.als-recap-photo:nth-child(3){grid-column:1/-1;width:calc(50% - 9px);justify-self:center}.als-media-grid{grid-template-columns:1fr}}
-@media(max-width:760px){.als-recap-title{padding:48px 6% 28px}.als-recap-gallery-section{padding:24px 5% 38px}.als-recap-gallery{grid-template-columns:1fr;gap:14px}.als-recap-photo,.als-recap-photo:nth-child(3){grid-column:1;width:100%;max-width:600px;justify-self:center}.als-recap-photo img{height:auto;max-height:560px;object-fit:contain}.als-media-section{padding:42px 5% 54px}.als-media-card{padding:14px}.als-media-heading{min-height:0}.recap-previous-divider{padding:35px 5% 8px}.archive-promo-card{align-items:flex-start;flex-direction:column}.archive-promo-link{white-space:normal}.archive-promo-section{padding:32px 5% 52px}.archive-empty-section{padding:42px 5% 65px}.archive-page-hero{padding:48px 6% 35px}}
+@media(max-width:760px){.archive-promo-card{align-items:flex-start;flex-direction:column}.archive-promo-link{white-space:normal}.archive-promo-section{padding:32px 5% 52px}.archive-empty-section{padding:42px 5% 65px}.archive-page-hero{padding:48px 6% 35px}}
+
+/* Courses & academic planning: two neuroscience tracks and separate additional resources */
+.academic-major-grid,.academic-other-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.academic-major-grid .resource-card{min-height:245px}
+.academic-other-heading{margin:52px 0 22px}
+.academic-other-heading .eyebrow{margin-bottom:9px}
+.academic-other-heading h3{font-family:"Playfair Display",Georgia,serif;color:var(--m);font-size:clamp(28px,3vw,38px);line-height:1.15;margin:0 0 10px}
+.academic-other-heading p:not(.eyebrow){color:var(--muted);margin:0;max-width:680px}
+.academic-other-grid .resource-card{min-height:230px}
+@media(max-width:700px){.academic-major-grid,.academic-other-grid{grid-template-columns:1fr}.academic-other-heading{margin-top:38px}}
