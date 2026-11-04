@@ -483,3 +483,31 @@ body{
 .recap-preview-grid-small img{height:185px}
 @media(max-width:800px){.recap-preview-sections{padding:8px 4% 50px;gap:24px}.recap-preview-card{padding:18px}.recap-preview-grid{gap:12px}.recap-preview-grid img{height:175px}.recap-preview-grid-small{width:95%;gap:16px}.recap-preview-grid-small img{height:145px}}
 @media(max-width:560px){.recap-preview-title{padding:38px 6% 24px}.recap-preview-card{padding:15px}.recap-preview-grid{grid-template-columns:1fr;gap:15px}.recap-preview-grid img{height:auto;aspect-ratio:16/10;object-fit:cover}.recap-preview-grid-small{width:100%;grid-template-columns:1fr}.recap-preview-grid-small img{height:auto;aspect-ratio:16/10}}
+
+
+/* Event 1 and Event 2: expanded photo and video galleries, November 2026. */
+.recap-preview-sections{max-width:1540px;margin:0 auto;padding-top:18px}
+.recap-preview-card{padding:clamp(18px,2.4vw,30px)}
+.recap-preview-grid-main{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.7vw,23px)}
+.recap-preview-grid-main figure{background:#f4f0ee}
+.recap-preview-grid-main img{height:clamp(210px,22vw,285px);object-fit:cover;object-position:center center}
+/* Aim the portrait crop at faces and shoulders rather than the empty floor. */
+.recap-preview-grid-main .recap-photo-new img{object-position:center 26%}
+.recap-preview-detail,.recap-inline-summary{margin-top:26px;padding:22px 25px;background:#fff8f3;border-left:4px solid var(--g);border-radius:8px}
+.recap-inline-summary .eyebrow{margin:0 0 8px}
+.recap-inline-summary h3{margin:0 0 9px;color:var(--m);font-family:'Playfair Display',Georgia,serif;font-size:clamp(21px,2.4vw,28px)}
+.recap-inline-summary p:last-child{margin:0;color:#494047;font-size:14px;line-height:1.75}
+/* Four uniformly sized slots: three ALS photos and one playable video. */
+.recap-als-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.8vw,24px);align-items:start}
+.recap-als-grid figure{margin:0;min-width:0}
+.recap-als-grid .recap-als-photo a{display:block;overflow:hidden;border-radius:10px;background:#f4f0ee}
+.recap-als-grid img,.recap-als-grid video{display:block;width:100%;height:clamp(180px,18vw,245px);object-fit:cover;border-radius:10px;background:#171314}
+.recap-als-grid img{object-position:50% 58%;transition:transform .2s ease}
+.recap-als-grid .recap-als-photo:nth-child(2) img{object-position:50% 60%}
+.recap-als-grid .recap-als-photo:nth-child(3) img{object-position:50% 56%}
+.recap-als-grid a:hover img{transform:scale(1.025)}
+.recap-als-video video{object-fit:contain}
+.recap-als-video figcaption{margin-top:8px;text-align:center;color:var(--m);font-size:12px;font-weight:700}
+@media(max-width:960px){.recap-als-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recap-als-grid img,.recap-als-grid video{height:clamp(195px,28vw,290px)}}
+@media(max-width:650px){.recap-preview-grid-main{grid-template-columns:repeat(2,minmax(0,1fr))}.recap-preview-grid-main img{height:clamp(175px,32vw,225px)}.recap-preview-grid-main .recap-photo-new img{object-position:center 25%}.recap-preview-description{margin-bottom:20px}.recap-inline-summary{padding:18px;margin-top:20px}}
+@media(max-width:440px){.recap-als-grid{grid-template-columns:1fr}.recap-als-grid img,.recap-als-grid video{height:245px}.recap-preview-grid-main img{height:180px}}
