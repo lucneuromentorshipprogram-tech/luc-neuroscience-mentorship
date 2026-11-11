@@ -1,7 +1,9 @@
-CONSOLIDATED WEBSITE UPDATE
+COMPLETE WEBSITE UPDATE — EVENT RECAP THREE
 
-This package preserves previous changes while applying the 3-photo bordered event recap design.
-Included: index.html (two ALS photos), mission.html (ALS Walk group photo), resources.html (side-by-side MC/CB, Excel-only academic plans), event-recaps.html (matching recap cards, original paragraphs, 3 photos each, existing video), combined styles.css, and related image/Excel assets.
+Preserves the previous homepage, mission, resources and Event Recap 1/2 changes.
+NEW: Event Recap 3, four photos, original two-paragraph recap, and an interactive 18-slide viewer beside the existing Google Slides presentation.
+The original Loyola Neuroscience PDF is also included for viewing/downloading.
 
-Upload the contents of this ZIP into your existing GitHub website repository root. Replace files with the same names, but DO NOT delete other existing website files. Keep your existing event video file and any other files not included in this ZIP.
-Any newer edits made directly in GitHub after these supplied versions must be merged separately.
+UPLOAD: Extract this ZIP and upload/replace matching files in the ROOT of your existing GitHub website repository. Do NOT delete any other files in your repository. Keep your existing event-2-als-walk-video.mp4 and all other site pages, logo, and scripts.
+
+This update is based on the last consolidated website files provided in our conversation; any newer direct GitHub changes must be merged separately.
