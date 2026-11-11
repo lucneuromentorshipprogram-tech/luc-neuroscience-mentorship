@@ -470,9 +470,9 @@ body{
 /* Event Recap Three and paired presentation players */
 .recap-event-three .recap-preview-description + .recap-preview-description{margin-top:12px}
 .recap-event-three .recap-preview-description a{color:#850020;text-decoration:underline;font-weight:700}
-.recap-three-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.recap-three-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .recap-three-grid figure{min-width:0;margin:0;overflow:hidden;border-radius:10px}
-.recap-three-grid img{display:block;width:100%;height:215px;object-fit:cover;object-position:center 35%}
+.recap-three-grid img{display:block;width:100%;height:245px;object-fit:cover;object-position:center 35%}
 .recap-slide-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start;max-width:1200px;margin:20px auto 0}
 .recap-slide-panel{min-width:0}
 .recap-slide-panel h3{font-size:clamp(17px,2vw,23px);color:#78001f;margin:0 0 12px}
@@ -486,5 +486,24 @@ body{
 .pdf-slide-controls button:last-child{margin-left:auto;font-size:18px}
 .pdf-slide-viewer:fullscreen{display:flex;flex-direction:column;justify-content:center;background:#000}
 .pdf-slide-viewer:fullscreen img{height:calc(100vh - 48px);width:100%;aspect-ratio:auto;object-fit:contain}
-@media(max-width:800px){.recap-slide-pair{grid-template-columns:1fr}.recap-three-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recap-three-grid img{height:220px}}
+@media(max-width:800px){.recap-slide-pair{grid-template-columns:1fr}.recap-three-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recap-three-grid img{height:220px}.recap-three-grid .recap-three-fourth-photo{grid-column:auto;max-width:none}}
 @media(max-width:480px){.recap-three-grid{grid-template-columns:1fr}.recap-three-grid img{height:auto;max-height:340px;object-fit:contain}}
+
+/* Consistent bordered recap cards, matching the original Events 1 & 2 design preview.
+   All existing page, footer, resource, and slideshow styling is preserved. */
+.recap-preview-title{text-align:center;padding-bottom:25px}
+.recap-preview-sections{width:min(94%,1250px);margin:20px auto 58px;display:grid;gap:32px}
+.recap-preview-card{background:#fff;border:2px solid #680920;border-radius:14px;padding:clamp(20px,2.5vw,30px);box-shadow:0 4px 12px rgba(70,0,16,.04)}
+.recap-preview-card h2{font-family:'Playfair Display',Georgia,serif;color:#670c25;font-size:clamp(27px,3vw,38px);line-height:1.2;margin:0 0 10px}
+.recap-preview-description{font-size:clamp(14px,1.3vw,17px);line-height:1.65;margin:0 0 22px;color:#28202a}
+.recap-preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.recap-preview-grid figure{min-width:0;margin:0;border-radius:11px;overflow:hidden;background:#f5f0ed}
+.recap-preview-grid figure img{width:100%;height:245px;display:block;object-fit:cover;object-position:center}
+.recap-preview-grid figure a{display:block;height:100%}
+.recap-preview-grid .recap-als-photo img{object-fit:contain;background:#f5f0ed}
+.recap-three-grid .recap-three-fourth-photo{grid-column:2;max-width:none}
+.recap-video-below{margin:22px 0 0;max-width:540px}
+.recap-video-below video{width:100%;height:auto;border-radius:10px;display:block}
+.recap-video-below figcaption{font-size:12px;color:#666;margin-top:8px}
+@media(max-width:800px){.recap-preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recap-preview-sections{width:min(94%,1250px);gap:22px}.recap-preview-grid .recap-three-fourth-photo{grid-column:auto}}
+@media(max-width:520px){.recap-preview-grid{grid-template-columns:1fr}.recap-preview-grid figure img{height:auto;max-height:310px;object-fit:contain}.recap-preview-card{padding:18px}.recap-preview-sections{width:94%}}
