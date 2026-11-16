@@ -528,3 +528,21 @@ body{
 @media (max-width:520px){
   .recap-event-two .recap-video-below{width:100%}
 }
+
+
+/* Event Recap Four: three presentation embeds displayed side by side on desktop. */
+.recap-slide-pair-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.recap-slide-pair-three .recap-slide-panel h3 {
+  font-size: clamp(16px, 1.45vw, 21px);
+}
+.recap-four-grid img {
+  object-position: center;
+}
+@media (max-width: 900px) {
+  .recap-slide-pair-three {
+    grid-template-columns: 1fr;
+  }
+}
