@@ -1,9 +1,4 @@
-LNMP Upcoming Opportunities combined update
-
-Upload the 10 HTML files to the ROOT of your GitHub website repository, replacing files of the same names.
-
-This package changes the site navigation from Professional Development to Upcoming Opportunities across all supplied pages, and updates the Upcoming Opportunities page title and section label.
-
-Keep the filename professional-development-resources.html unchanged so existing links continue working.
-
-All other site files (CSS, JavaScript, PDF, images, and other assets) should remain as they are.
+Upload event-recaps.html, styles.css, and script.js to your website's root directory.
+These files are based on your most recently uploaded November 16 versions.
+Changes: center Event Recap title and subtitle; reduce Google Slides iframe height to match the center presentation and eliminate excess empty black space. Other event content is unchanged.
+Note: Google Slides retains its own built-in player controls, while the middle slideshow uses your custom PDF controls.
